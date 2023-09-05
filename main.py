@@ -1,5 +1,5 @@
 #Naming
-def primernaming()-> int():
+def primernaming()-> list():
     strain1 = int(input("Hello, welcome to Vuppy. Please select your strain (use the corresponding number). "
                         "1.p4c2 \n 2.p3c2 \n 3.p2c2 \n 4.p3c2 \n 5.p2c3 \n 6. I don't know my strain."))
 
@@ -15,13 +15,17 @@ def primernaming()-> int():
     else:
         primernum = 2
 
-def ctrlnaming ()-> int():
+    return strain1
+
+def ctrlnaming (strain1)-> int():
     if strain1 == 4 or strain1 == 5 or strain1 == 7:
         ctrlnum = 3
 
     else:
         ctrlnum = 2
     return ctrlnum
+
+
 
 def tailtubenaming() -> int():
     tailnum = int(input("What is your total number of tails?"))
@@ -31,6 +35,7 @@ def tailtubenaming() -> int():
 
     tubenum = tailnum ++ ctrlnum ++ bonusnum
 
+#test print
     print("Your total number of tails is:", tailnum,
     "\n Your total number of ctrls is:", ctrlnum,
     "\n Your total number of bonus is:", bonusnum,
@@ -57,7 +62,7 @@ def finalnums():
 
 def main():
     primernaming()
-    ctrlnaming()
+    ctrlnaming(strain1)
     tailtubenaming()
     allcalc()
     finalnums()
