@@ -1,8 +1,7 @@
 #Naming
-def primernaming()-> list():
+def primernaming():
     strain1 = int(input("Hello, welcome to Vuppy. Please select your strain (use the corresponding number). "
                         "1.p4c2 \n 2.p3c2 \n 3.p2c2 \n 4.p3c2 \n 5.p2c3 \n 6. I don't know my strain."))
-
     if strain1 == 1:
         primernum = 4
 
@@ -15,23 +14,25 @@ def primernaming()-> list():
     else:
         primernum = 2
 
-    return strain1
+    return [strain1, primernum]
 
-def ctrlnaming (strain1)-> int():
+def ctrlnaming (strain1:int)-> int():
     if strain1 == 4 or strain1 == 5 or strain1 == 7:
         ctrlnum = 3
 
     else:
         ctrlnum = 2
+
     return ctrlnum
 
-
-
-def tailtubenaming() -> int():
+def tailtubenaming(ctrlnum:int) -> int():
+    import math
     tailnum = int(input("What is your total number of tails?"))
-
-    bonusnum = tailnum/10
-    round(bonusnum)
+#figure out how to calculate bonusnum
+        if tailnum <= 10
+            bonusnum = 1
+            else
+            bonusnum = tailnum/10
 
     tubenum = tailnum ++ ctrlnum ++ bonusnum
 
@@ -42,7 +43,9 @@ def tailtubenaming() -> int():
     "\n Your total number of tubes is:", tubenum,
             )
 
-def allcalc() -> int():
+    return tubenum
+
+def allcalc(tubenum:int) -> int():
     totalmix = tubenum * 50
     emerald = tubenum * 25
     dna = tubenum * 4
@@ -61,10 +64,13 @@ def finalnums():
 
 
 def main():
-    primernaming()
-    ctrlnaming(strain1)
-    tailtubenaming()
+#we are declaring the variable
+    primer_strain = list()
+    primer_strain = primernaming()
+    ctrlnum = ctrlnaming(primer_strain[0])
+    tailtubenaming(ctrlnum)
     allcalc()
     finalnums()
 
-main()
+if main == main:
+    main()
