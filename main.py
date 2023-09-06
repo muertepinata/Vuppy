@@ -26,13 +26,8 @@ def ctrlnaming (strain1:int)-> int():
     return ctrlnum
 
 def tailtubenaming(ctrlnum:int) -> int():
-    import math
     tailnum = int(input("What is your total number of tails?"))
-#figure out how to calculate bonusnum
-        if tailnum <= 10
-            bonusnum = 1
-            else
-            bonusnum = tailnum/10
+    bonusnum = round(tailnum/10)
 
     tubenum = tailnum ++ ctrlnum ++ bonusnum
 
@@ -45,14 +40,13 @@ def tailtubenaming(ctrlnum:int) -> int():
 
     return tubenum
 
-def allcalc(tubenum:int) -> int():
+def allcalc(tubenum:int, primernum:int) -> int():
     totalmix = tubenum * 50
     emerald = tubenum * 25
     dna = tubenum * 4
     primervol = (tubenum * .5) * primernum
-    ddh20 = totamix - (emerald + dna + primervol)
+    ddh20 = totalmix - (emerald + dna + primervol)
 
-def finalnums():
     # prints
     print("\nHere are your mastermix volumes:")
     print("Emerald:", tubenum, "ul.")
@@ -64,13 +58,12 @@ def finalnums():
 
 
 def main():
-#we are declaring the variable
+#variable declaration
     primer_strain = list()
     primer_strain = primernaming()
     ctrlnum = ctrlnaming(primer_strain[0])
-    tailtubenaming(ctrlnum)
-    allcalc()
-    finalnums()
+    tubenum = tailtubenaming(ctrlnum)
+    allcalc(tubenum, primer_strain[1])
 
 if main == main:
     main()
