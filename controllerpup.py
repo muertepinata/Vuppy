@@ -49,7 +49,7 @@ def allcalc(tubenum:int, primernum:int) -> int():
 
     # prints
     print("\nHere are your mastermix volumes:")
-    print("Emerald:", tubenum, "ul.")
+    print("Emerald:", emerald, "ul.")
     print("DNA:", dna, "ul.")
     print("Primers:", primervol, "ul total,(", primervol / primernum, "ul per primer.)")
     print("ddH20:", ddh20, "ul.")
