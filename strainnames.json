@@ -1,174 +1,165 @@
-[
-  {
-    "name": "APC",
-    "primers": 2,
-    "controls":2
-  },
-  {
-  "name": "APC-CDX2",
-  "primers": 2,
-  "controls":2
-  },
-  {
-  "name": "B6 Clock",
-  "primers": 4,
-  "controls":3
-  },
-  {
-    "name": "cAPC",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "CAT",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "CD4Cre",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "cHEB",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "cIL10 Floxed",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "cIL23 Floxed",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "cPTEN",
-    "primers": 3,
-    "controls":3
-  },
-    {
-    "name": "cTCF",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "cTCF-Del",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "cTCF-G",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "Foxp3 Cre Exon",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "Foxp3 Cre YFP",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "Foxp3 Cre ER mut",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "Foxp3Cre ER wt",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "GRP177",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "IL10 Floxed",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "IL10 Thy1.1",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "IL10R",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "IL17 Thy1.1",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "IL23R Mut",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "IL23R Wt",
-    "primers": 2,
-    "controls":2
-  },
-    {
-    "name": "KEM",
-    "primers": 2,
-    "controls":3
-  },
-    {
-    "name": "KLGR1",
-    "primers": 3,
-    "controls":3
-  },
 
-      {
-    "name": "KRAS Conditional",
-    "primers": 3,
-    "controls":3
-  },
-
-      {
-    "name": "Mcpt5Cre",
-    "primers": 2,
-    "controls": 2
-  },
-
-  
-      {
-    "name": "MrgprB2 Mut",
-    "primers": 2,
-    "controls":2
-  },
-
-  
-      {
-    "name": "MrgprB2 Wt",
-    "primers": 2,
-    "controls":2
-  },
-
-    
-      {
-    "name": "Per2Luc",
-    "primers": 3,
-    "controls":3
-  },
-
-    
-      {
-    "name": "Ts4Cre",
-    "primers": 2,
-    "controls":2
-  }
-
-  
-]
+{
+  "wholestrains": [
+    {
+      "name": "APC",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "APC-CDX2",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "B6 Clock",
+      "primers": 4,
+      "controls": 3
+    },
+    {
+      "name": "cAPC",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "CAT",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "CD4Cre",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "cHEB",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "cIL10 Floxed",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "cIL23 Floxed",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "cPTEN",
+      "primers": 3,
+      "controls": 3
+    },
+    {
+      "name": "cTCF",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "cTCF-Del",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "cTCF-G",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "Foxp3 Cre Exon",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "Foxp3 Cre YFP",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "Foxp3 Cre ER mut",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "Foxp3Cre ER wt",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "GRP177",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "IL10 Floxed",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "IL10 Thy1.1",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "IL10R",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "IL17 Thy1.1",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "IL23R Mut",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "IL23R Wt",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "KEM",
+      "primers": 2,
+      "controls": 3
+    },
+    {
+      "name": "KLGR1",
+      "primers": 3,
+      "controls": 3
+    },
+    {
+      "name": "KRAS Conditional",
+      "primers": 3,
+      "controls": 3
+    },
+    {
+      "name": "Mcpt5Cre",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "MrgprB2 Mut",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "MrgprB2 Wt",
+      "primers": 2,
+      "controls": 2
+    },
+    {
+      "name": "Per2Luc",
+      "primers": 3,
+      "controls": 3
+    },
+    {
+      "name": "Ts4Cre",
+      "primers": 2,
+      "controls": 2
+    }
+  ]
+}

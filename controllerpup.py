@@ -1,8 +1,8 @@
 #Naming
 def primernaming():
     strain1 = int(input("Hello, welcome to Vuppy. Please select your strain (use the corresponding number). "
-                        "1.p4c2 \n 2.p3c2 \n 3.p2c2 \n 4.p3c2 \n 5.p2c3 \n 6. I don't know my strain."))
-    if strain1 == 1:
+                        "1.p4c2 \n 2.p3c2 \n 3.p2c2 \n 4.p3c2 \n 5.p2c3 \n 6. I don't know my strain., 7. p4c3"))
+    if strain1 == 1 or strain1 == 7:
         primernum = 4
 
     elif strain1 == 2 or strain1 == 4:
@@ -25,6 +25,8 @@ def ctrlnaming (strain1:int)-> int():
 
     return ctrlnum
 
+#don't touch below this, above this needs to be reconfigured for the json input
+
 def tailtubenaming(ctrlnum:int) -> int():
     tailnum = int(input("What is your total number of tails?"))
     bonusnum = round(tailnum/10)
@@ -44,7 +46,7 @@ def allcalc(tubenum:int, primernum:int) -> int():
     totalmix = tubenum * 50
     emerald = tubenum * 25
     dna = tubenum * 4
-    primervol = (tubenum * .5) * primernum
+    primervol = (tubenum * primernum * .5)
     ddh20 = totalmix - (emerald + dna + primervol)
 
     # prints
