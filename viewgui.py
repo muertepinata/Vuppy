@@ -11,14 +11,7 @@ def windowcreator():
     strainlbl = tk.Label(text = "Select your strain")
     strainlbl.grid(column=1, row=1)
 
-    with open ('strainnames.json', 'r') as f:
-        primer_json_file = json.load(f)
 
-    options_list = []
-
-    for wholestrains in primer_json_file['wholestrains']:
-        options_list.append(wholestrains['name'])
-        print(wholestrains['name'])
 
     value_inside = tk.StringVar(window)
     value_inside.set("Select a strain")
@@ -26,11 +19,11 @@ def windowcreator():
     question_menu = tk.OptionMenu(window, value_inside, *options_list)
     question_menu.grid(column = 1, row = 2)
 
-    def print_answers():
+    def print_strains():
             print("Selected Option {}".format (value_inside.get()))
             return None
 
-    submit_button = tk.Button(window, text = "Submit", command = print_answers)
+    submit_button = tk.Button(window, text = "Submit", command = print_strains)
     submit_button.grid(column = 1, row = 3)
 
 #tailnum input

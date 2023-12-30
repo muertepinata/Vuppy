@@ -1,3 +1,17 @@
+import json
+
+#jsonread reads the strain names from the json :)
+def jsonread():
+    with open('strainnames.json', 'r') as f:
+        primer_json_file = json.load(f)
+
+    options_list = []
+
+    for wholestrains in primer_json_file['wholestrains']:
+        options_list.append(wholestrains['name'])
+
+    return options_list
+
 #Naming
 def primernaming():
     strain1 = int(input("Hello, welcome to Vuppy. Please select your strain (use the corresponding number). "
